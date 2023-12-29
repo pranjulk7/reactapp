@@ -1,12 +1,13 @@
 
       import './App.css';
-
+      import testImage from './img/test.png';
       function App()  {
         return (
         <>
+        
           <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">textUtils</a>
+          <a className="navbar-brand" href="/">shiv.AI</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -18,7 +19,12 @@
               <li className="nav-item">
                 <a className="nav-link" href="/">About</a>
               </li>
-             
+              <li className="nav-item">
+                <a className="nav-link" href="/">Services</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/">Demo</a>
+              </li>
              
             </ul>
             <form className="d-flex" role="search">
@@ -28,6 +34,22 @@
           </div>
         </div>
       </nav>
+     
+      <div className="firstSection">
+            <div className="leftSection">
+              
+                <br/>
+                <span className="orange">Where Innovation</span>
+                <div>Meets Intelligence </div>
+                <span id="element"></span>
+            </div>
+            <div className="rightSection">
+                <img src={testImage} alt=""/>
+            </div>
+
+        </div>
+        
+    
         </>
         );
       }
